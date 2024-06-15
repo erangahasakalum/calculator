@@ -3,13 +3,16 @@ $('.btn').click(function (){
 })
 
 $('.symbol').click(function (){
-    console.log($(this).text())
     setSymbol($(this).text())
 })
 
+$('#clear').click(function (){
+    $('#txt').text('');
+})
+
 function setSymbol(symbol) {
-    $('#display').text($('#display').text()+symbol)
+    $('#txt').text($('#txt').text()+symbol)
 }
 function setValue(value){
-    $('#display').text($('#display').text()+value)
+    $('#txt').text($('#txt').text()+value)
 }
